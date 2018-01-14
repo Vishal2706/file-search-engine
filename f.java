@@ -53,7 +53,7 @@ public void start(File dir,String file)
 }
 
 
-public void findfile(File dir,String file)
+public String findfile(File dir,String file)
 {
 //System.out.println("searching in directory : "+dir.getParent());
 
@@ -73,6 +73,7 @@ if(listfile!=null)
  {
 
   System.out.println("file found "+ff.getParent());
+  return ff.getParent();
   try
   {Thread.sleep(2);}
  catch(Exception e)
