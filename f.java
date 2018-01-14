@@ -45,10 +45,10 @@ if(listfile!=null)
 class filesearch extends Thread
 {
  
-public void start(File dir,String file)
+public String start(File dir,String file)
 {
  //System.out.println("new thread "+dir.toString());
- findfile(dir,file);
+return findfile(dir,file);
 
 }
 
