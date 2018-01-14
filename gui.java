@@ -63,7 +63,7 @@ System.out.println(directory);
 filesearch s=new filesearch();
 //s.findfile(new File(directory),filename);
 
-s.start(new File(directory),filename);
+String result = s.start(new File(directory),filename);
 		JTextField r = new JTextField();
 		r.setvisible(true);
 		r.setBounds(10, 300, 100, 40);
